@@ -4,9 +4,11 @@ import LeftBar from '../components/LeftBar/LeftBar';
 
 const Main = () => {
     return (
-        <div className='grid grid-cols-3 mt-5'>
+        <div className='grid grid-cols-3'>
             <LeftBar />
-            <Outlet className="col-span-2" />
+            <div className="col-span-2 min-h-screen bg-slate-100 pt-20">
+            <Outlet />
+            </div>
         </div>
     );
 };
